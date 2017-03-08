@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Kolakoski Sequence</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Load the AJAX API for Google things-->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+  <script src = 'index.js'></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <style>
+  *{font-family: "Open Sans", sans-serif}
+  </style>
+
+</head>
+ <body onload = "prime();">
+   <div class="jumbotron text-center">
+     <h1>Exploring the Kolakoski Sequence</h1>
+     <p>Aurora and Michael love combinatorics</p>
+     <input type = 'button' id = 'generatebutton' class="btn btn-secondary btn-lg" onClick = 'drawChart()' value = "Generate Next Block" />
+     <input type = 'button' id = 'generate10button' class="btn btn-secondary btn-lg" onClick = 'Generate10()' value = "Generate 10 Blocks" />
+
+   </div>
+   <div class="container">
+     <div class="row">
+       <div class="col-md-4">
+         <h4 id = "title1"><b></b></h4>
+         <h2 id = 'sequence' style ='overflow-y: scroll;'> </h2>
+         <br>
+         <br>
+       </div>
+
+       <div class="col-md-8" id = "frequency_div">
+         <div class = "row">
+           <div class = "col-md-1"></div>
+           <div class = "col-md-6">
+             <h4><b> Keane's Problem </b></h4>
+             <h3>Number of 1s</h3>
+             <h1 id = 'instances'></h1>
+           </div>
+           <div class = "col-md-5">
+             <h4 style = "color:white">.</h4>
+             <h3>Frequency of 1s</h3>
+             <h1 id = 'frequency1'></h1>
+           </div>
+         </div>
+
+         <div id="chart_div"></div>
+
+       </div>
+     </div>
+     <div>
+       <h4> <b> Construction </b> </h4>
+     </div>
+   </div>
+
+ </body>
+</html>
