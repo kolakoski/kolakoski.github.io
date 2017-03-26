@@ -6,7 +6,6 @@ var N = 3 //number of total digits
 var speed = 1000 //delay in ms when animating
 var flag = false;
 
-
 google.charts.load('current', {'packages':['corechart']});
 
 var chartOptions = {
@@ -27,12 +26,7 @@ var freq = [
   [2, 1/2],
   [3,1/3]
 ]
-window.document.getElement
-/*
-window.onresize = function(){
-  prime();
-}
-*/
+
 function Generate10(){
   count = 1;
   while (count < 11){
