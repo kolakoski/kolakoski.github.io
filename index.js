@@ -319,7 +319,7 @@ function cont(){
 function stop(){
   flag = false;
   document.getElementById('contbutton').setAttribute('onClick', 'cont();');
-  document.getElementById('contbutton').value = "I'm a lazy shit"
+  document.getElementById('contbutton').value = "Generate #forever"
   document.getElementById('generatebutton').disabled = false
   document.getElementById('generate10button').disabled = false
 }
